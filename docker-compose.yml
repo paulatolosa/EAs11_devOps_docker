@@ -24,7 +24,7 @@ services:
       - mongodb
     env_file:
       # Carga automáticamente las variables de tu .env
-      - ./EA_BACKEND_G5/.env 
+      - .env 
     networks:
       - backend_internal  # Para hablar con MongoDB
       - frontend_net      # Para que web/backoffice lleguen al backend
